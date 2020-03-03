@@ -39,7 +39,7 @@ class GoogleMaps extends AbstractMap
         // take only the first result
         $result = $result['results'][0];
 
-        if(isset($results['formatted_address'])) {
+        if(isset($result['formatted_address'])) {
             $mapsDto->address = $result['formatted_address'];
         }
 
