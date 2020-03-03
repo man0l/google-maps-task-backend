@@ -36,13 +36,14 @@ class GoogleMaps extends AbstractMap
             return new MapsDTO();
         }
 
-        $results = $result['results'];
+        // take only the first result
+        $result = $result['results'][0];
 
         if(isset($results['formatted_address'])) {
-            $mapsDto->address = $results['formatted_address'];
+            $mapsDto->address = $result['formatted_address'];
         }
 
-        if(isset($results['geometry'])) {
+        if(isset($result['geometry'])) {
             $mapsDto->latitude  = $result['geometry']['location']['lat'];
             $mapsDto->longitude = $result['geometry']['location']['lng'];
         }
