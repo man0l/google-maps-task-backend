@@ -18,8 +18,8 @@ class MapsController extends AbstractController
 
         return $this->json([
            'longitude' => $mapsDto->longitude,
-           'latitude' => $mapsDto->latitude,
-            'address' => $mapsDto->address
+           'latitude'  =>  $mapsDto->latitude,
+            'address'  =>  $mapsDto->address
         ]);
     }
 
@@ -32,8 +32,8 @@ class MapsController extends AbstractController
 
         return $this->json([
             'longitude' => $mapsDto->longitude,
-            'latitude' => $mapsDto->latitude,
-            'address' => $mapsDto->address
+            'latitude'  => $mapsDto->latitude,
+            'address'   => $mapsDto->address
         ]);
     }
 }
