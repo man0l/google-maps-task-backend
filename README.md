@@ -25,7 +25,8 @@ Let's take a look into the services:
 ## setup
 0) clone the repo: git clone https://github.com/man0l/google-maps-task-backend.git
 1) install Symfony from this link: https://symfony.com/download
-2) navigate to the directory and run the server with the command: `symfony serve`
+2) navigate to the directory and install the dependencies: `composer install`
+3) and run the server with the command: `symfony serve`
 
 ## run tests
 
